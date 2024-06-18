@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>SEA Salon</title>
+    <style>
+        /* CSS will go here */
+    </style>
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    </script>
+    <div class="review-system">
+        <h2>Leave a Review</h2>
+        <div class="rating">
+            <span class="star" data-rating="1">★</span>
+            <span class="star" data-rating="2">★</span>
+            <span class="star" data-rating="3">★</span>
+            <span class="star" data-rating="4">★</span>
+            <span class="star" data-rating="5">★</span>
+        </div>
+        <textarea id="review-text" placeholder="Write your review here..."></textarea>
+        <button id="submit-review">Submit Review</button>
+        <div id="reviews-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
