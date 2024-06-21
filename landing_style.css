@@ -1,25 +1,24 @@
-.navbar-placeholder .ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-.navbar-placeholder .li {
-    float: left;
-    font-family: Helvetica, Arial, Helvetica, sans-serif;
-  }
-  
-.navbar-placeholder .li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
+.navbar-placeholder {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
 
-.navbar-placeholder .li a:hover {
-    background-color: #967bb6;
-  }
+.navbar-placeholder li {
+  float: left;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.navbar-placeholder li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar-placeholder li a:hover {
+  background-color: #967bb6;
+}
