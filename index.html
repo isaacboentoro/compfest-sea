@@ -3,18 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>SEA Salon: Homepage</title>
 </head>
 <body>
-    <script>
-        fetch('navbar.html')
-            .then(response => response.text())
-            .then(data => {
-                document.body.innerHTML = data;
-            })
-            .catch(error => {
-                console.error('Error:', error);
-            });
-    </script>
+    <div id="navbar-placeholder">
+        <script>
+            fetch('navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar-placeholder').innerHTML = data;
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        </script>
+    </div>
+    <link rel="stylesheet" href="styles.css">
+    <div class="container">
+        <h1>SEA Salon</h1>
+        <h2><i>“Beauty and Elegance Redefined”
+
+        </i></h2>
+        <h2>Services</h2>
+        <ul class="content-list">
+            <li>Haircuts and Styling</li>
+            <li>Manicure and Pedicure</li>
+            <li>Facial Treatments</li>
+        </ul>
+
+        <h2>Contact Details</h2>
+        <h3>Thomas</h3>
+        <ul class="content-list">
+            <li>Phone Number: 08123456789</li>
+        </ul>
+        <h3>Sekar</h3>
+        <ul>
+            <li>Phone Number: 08164829372</li>
+        </ul>
+    </div>
 </body>
 </html>
