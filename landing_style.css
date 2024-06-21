@@ -22,3 +22,7 @@
 .navbar-placeholder li a:hover {
   background-color: #967bb6;
 }
+
+html {
+  background-color: #f0f0f0;
+}
